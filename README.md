@@ -1,0 +1,2 @@
+# 36-STUDY-iOS-ANIMATION
+AT SOPT iOS 애니메이션 스터디
