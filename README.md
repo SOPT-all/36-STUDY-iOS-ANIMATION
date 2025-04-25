@@ -9,10 +9,10 @@ AT SOPT iOS 애니메이션 스터디
 
 ## 👤 브랜치 규칙
 - 2개 만들어야 됩니다 !!!!!!
-- `main/이름`에서 `week/이름` 브랜치를 만들어서 매주 실습 진행하면 됩니다 ! 
+- `main-이름`에서 `week-이름` 브랜치를 만들어서 매주 실습 진행하면 됩니다 ! 
 
 1) main/이름
-- ex) `main/juri`
+- ex) `main-juri`
 
 2) 주차/이름
-- ex) `week1/juri`
+- ex) `week1-juri`
