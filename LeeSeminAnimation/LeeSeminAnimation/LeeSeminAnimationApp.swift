@@ -11,7 +11,7 @@ import SwiftUI
 struct LeeSeminAnimationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ButtonExample()
         }
     }
 }
