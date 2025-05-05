@@ -11,9 +11,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.view.backgroundColor = .white
+        
+        let button = UIButton()
+        button.setTitle("Toast Message", for: .normal)
+        button.backgroundColor = .systemBlue
+        button.addTarget(self, action: #selector(showToastMessage), for: .touchUpInside)
+        
+        view.addSubview(button)
+        
+        button.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(150)
+            $0.width.equalTo(300)
+        }
     }
-
-
+    
+    @objc func showToastMessage() {
+        self.view.ToastMsg(message: "Toast Message 실습입니다", duration: 5.0)
+    }
 }
-
