@@ -16,7 +16,7 @@ class MovingViewController: UIViewController {
         $0.image = .enderMan
         $0.contentMode = .scaleAspectFit
     }
-    private lazy var animebutton = UIButton().then {
+    private lazy var animeButton = UIButton().then {
         $0.contentVerticalAlignment = .center
         $0.backgroundColor = .black
         $0.setTitleColor(.white, for: .normal)
@@ -35,7 +35,7 @@ class MovingViewController: UIViewController {
     
     // MARK: - Layout
     private func setLayout() {
-        [movingImageView, animebutton].forEach {
+        [movingImageView, animeButton].forEach {
             self.view.addSubview($0)
         }
         
@@ -45,7 +45,7 @@ class MovingViewController: UIViewController {
             $0.top.equalTo(view.safeAreaLayoutGuide).offset(150)
         }
         
-        animebutton.snp.makeConstraints {
+        animeButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.height.equalTo(52)
             $0.left.equalToSuperview().offset(20)
