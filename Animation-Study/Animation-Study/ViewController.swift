@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     private let rotateButton = UIButton()
     
+    private let toastButton = UIButton()
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -23,7 +25,7 @@ class ViewController: UIViewController {
         setLayout()
     }
     
-    @objc private func rotateImage() {
+    @objc private func rotateButtonTapped() {
         
         UIView.animateKeyframes(withDuration: 5, delay: 0) {
             
@@ -49,6 +51,39 @@ class ViewController: UIViewController {
         }
     }
     
+    @objc private func toastButtonTapped(duration: TimeInterval = 2.0) {
+        
+        let label = UILabel()
+        label.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        label.textColor = UIColor.white
+        label.textAlignment = .center
+        label.text = "쿵쿵야"
+        label.alpha = 0.0
+        label.layer.cornerRadius = 10
+        label.clipsToBounds = true
+        
+        view.addSubview(label)
+        
+        label.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(40)
+            $0.width.equalToSuperview().multipliedBy(0.6)
+            $0.height.equalTo(35)
+        }
+        
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseIn, animations: {
+            label.alpha = 1.0
+        }, completion: { _ in
+            
+            
+            UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseOut, animations: {
+                label.alpha = 0.0
+            }, completion: { _ in
+                label.removeFromSuperview()
+            })
+        })
+    }
+    
     private func setUI() {
         
         view.backgroundColor = .systemGreen
@@ -58,7 +93,8 @@ class ViewController: UIViewController {
         
         view.addSubviews(
             imageView,
-            rotateButton
+            rotateButton,
+            toastButton
         )
         
         imageView.snp.makeConstraints {
@@ -80,7 +116,19 @@ class ViewController: UIViewController {
             $0.titleLabel?.font = .systemFont(ofSize: 30)
             $0.backgroundColor = .systemGreen
             $0.layer.cornerRadius = 8
-            $0.addTarget(self, action: #selector(rotateImage), for: .touchUpInside)
+            $0.addTarget(self, action: #selector(rotateButtonTapped), for: .touchUpInside)
+        }
+        
+        toastButton.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview().inset(100)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(200)
+        }
+        
+        toastButton.do {
+            $0.setTitle("Toast 🍞", for: .normal)
+            $0.backgroundColor = .brown
+            $0.layer.cornerRadius = 8
+            $0.addTarget(self, action: #selector(toastButtonTapped), for: .touchUpInside)
         }
     }
 }
