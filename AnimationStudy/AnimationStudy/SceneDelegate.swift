@@ -16,7 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let toastViewController = ToastViewController()
-        let navigationController = UINavigationController(rootViewController: toastViewController)
+        let segmentedControlViewController = SegmentedControlViewController()
+        let navigationController = UINavigationController(rootViewController: segmentedControlViewController)
         
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = navigationController
