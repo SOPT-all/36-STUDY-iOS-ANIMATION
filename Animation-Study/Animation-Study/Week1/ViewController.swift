@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import Then
+import Toast
 
 class ViewController: UIViewController {
     
@@ -30,7 +31,8 @@ class ViewController: UIViewController {
         UIView.animateKeyframes(withDuration: 5, delay: 0) {
             
             UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1/5) {
-                self.imageView.transform = CGAffineTransform(rotationAngle: .pi)
+                self.imageView.transform = self.imageView.transform.rotated(by: .pi)
+                //self.imageView.transform = CGAffineTransform(rotationAngle: .pi)
             }
             
             UIView.addKeyframe(withRelativeStartTime: 1/5, relativeDuration: 1/5) {

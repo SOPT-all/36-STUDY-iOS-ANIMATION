@@ -1,6 +1,15 @@
 {
-  "originHash" : "0cd11a4ea344b95c25e88fb39b351003de5b41040e76927e86f0f8b8a4edc7a3",
+  "originHash" : "785f878761e75bf17f07df2e4b081192730b8ece7601f4b48661978b75892a01",
   "pins" : [
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios",
+      "state" : {
+        "revision" : "047aa81b77adcbf583a966dfef620d17650cc656",
+        "version" : "4.5.1"
+      }
+    },
     {
       "identity" : "snapkit",
       "kind" : "remoteSourceControl",
@@ -17,6 +26,15 @@
       "state" : {
         "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a",
         "version" : "3.0.0"
+      }
+    },
+    {
+      "identity" : "toast-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scalessec/Toast-Swift",
+      "state" : {
+        "revision" : "ddccd20d6fb718448d9b179c454c561653fda7d5",
+        "version" : "5.1.1"
       }
     }
   ],

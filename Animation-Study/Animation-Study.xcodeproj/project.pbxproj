@@ -9,40 +9,36 @@
 /* Begin PBXBuildFile section */
 		F668100A2DCA0B1C004DD140 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F66810092DCA0B1C004DD140 /* SnapKit */; };
 		F668100D2DCA0B25004DD140 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F668100C2DCA0B25004DD140 /* Then */; };
+		F668113A2DCA5F40004DD140 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = F66811392DCA5F40004DD140 /* Toast */; };
+		F6C332092DE4A5D000B8A2D5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F6C332082DE4A5D000B8A2D5 /* Lottie */; };
+		F6C332132DE4A60000B8A2D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3320A2DE4A60000B8A2D5 /* AppDelegate.swift */; };
+		F6C332142DE4A60000B8A2D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3320F2DE4A60000B8A2D5 /* SceneDelegate.swift */; };
+		F6C332152DE4A60000B8A2D5 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C332102DE4A60000B8A2D5 /* UIView+.swift */; };
+		F6C332162DE4A60000B8A2D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C332112DE4A60000B8A2D5 /* ViewController.swift */; };
+		F6C332172DE4A60000B8A2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C3320B2DE4A60000B8A2D5 /* Assets.xcassets */; };
+		F6C332192DE4A60000B8A2D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C3320E2DE4A60000B8A2D5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6680FF02DC9E461004DD140 /* Animation-Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animation-Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3320A2DE4A60000B8A2D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6C3320B2DE4A60000B8A2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6C3320C2DE4A60000B8A2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C3320D2DE4A60000B8A2D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6C3320F2DE4A60000B8A2D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6C332102DE4A60000B8A2D5 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		F6C332112DE4A60000B8A2D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F66810022DC9E463004DD140 /* Exceptions for "Animation-Study" folder in "Animation-Study" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = F6680FEF2DC9E461004DD140 /* Animation-Study */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F6680FF22DC9E461004DD140 /* Animation-Study */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F66810022DC9E463004DD140 /* Exceptions for "Animation-Study" folder in "Animation-Study" target */,
-			);
-			path = "Animation-Study";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F6680FED2DC9E461004DD140 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F668113A2DCA5F40004DD140 /* Toast in Frameworks */,
 				F668100A2DCA0B1C004DD140 /* SnapKit in Frameworks */,
 				F668100D2DCA0B25004DD140 /* Then in Frameworks */,
+				F6C332092DE4A5D000B8A2D5 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +48,7 @@
 		F6680FE72DC9E461004DD140 = {
 			isa = PBXGroup;
 			children = (
-				F6680FF22DC9E461004DD140 /* Animation-Study */,
+				F6C332122DE4A60000B8A2D5 /* Animation-Study */,
 				F6680FF12DC9E461004DD140 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +59,44 @@
 				F6680FF02DC9E461004DD140 /* Animation-Study.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F6C332122DE4A60000B8A2D5 /* Animation-Study */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3321C2DE4A65C00B8A2D5 /* Application */,
+				F6C3321B2DE4A64C00B8A2D5 /* Global */,
+				F6C3321A2DE4A60800B8A2D5 /* Week1 */,
+				F6C3320C2DE4A60000B8A2D5 /* Info.plist */,
+				F6C3320E2DE4A60000B8A2D5 /* LaunchScreen.storyboard */,
+			);
+			path = "Animation-Study";
+			sourceTree = "<group>";
+		};
+		F6C3321A2DE4A60800B8A2D5 /* Week1 */ = {
+			isa = PBXGroup;
+			children = (
+				F6C332112DE4A60000B8A2D5 /* ViewController.swift */,
+			);
+			path = Week1;
+			sourceTree = "<group>";
+		};
+		F6C3321B2DE4A64C00B8A2D5 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3320B2DE4A60000B8A2D5 /* Assets.xcassets */,
+				F6C332102DE4A60000B8A2D5 /* UIView+.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		F6C3321C2DE4A65C00B8A2D5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3320A2DE4A60000B8A2D5 /* AppDelegate.swift */,
+				F6C3320F2DE4A60000B8A2D5 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,13 +114,12 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F6680FF22DC9E461004DD140 /* Animation-Study */,
-			);
 			name = "Animation-Study";
 			packageProductDependencies = (
 				F66810092DCA0B1C004DD140 /* SnapKit */,
 				F668100C2DCA0B25004DD140 /* Then */,
+				F66811392DCA5F40004DD140 /* Toast */,
+				F6C332082DE4A5D000B8A2D5 /* Lottie */,
 			);
 			productName = "Animation-Study";
 			productReference = F6680FF02DC9E461004DD140 /* Animation-Study.app */;
@@ -119,6 +152,8 @@
 			packageReferences = (
 				F66810082DCA0B1C004DD140 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F668100B2DCA0B25004DD140 /* XCRemoteSwiftPackageReference "Then" */,
+				F66811382DCA5F40004DD140 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				F6C332072DE4A5D000B8A2D5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F6680FF12DC9E461004DD140 /* Products */;
@@ -135,6 +170,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C332172DE4A60000B8A2D5 /* Assets.xcassets in Resources */,
+				F6C332192DE4A60000B8A2D5 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +182,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C332132DE4A60000B8A2D5 /* AppDelegate.swift in Sources */,
+				F6C332142DE4A60000B8A2D5 /* SceneDelegate.swift in Sources */,
+				F6C332152DE4A60000B8A2D5 /* UIView+.swift in Sources */,
+				F6C332162DE4A60000B8A2D5 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6C3320E2DE4A60000B8A2D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C3320D2DE4A60000B8A2D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F66810042DC9E463004DD140 /* Debug */ = {
@@ -362,6 +414,22 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		F66811382DCA5F40004DD140 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		F6C332072DE4A5D000B8A2D5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -374,6 +442,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F668100B2DCA0B25004DD140 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		F66811392DCA5F40004DD140 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F66811382DCA5F40004DD140 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		F6C332082DE4A5D000B8A2D5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6C332072DE4A5D000B8A2D5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
