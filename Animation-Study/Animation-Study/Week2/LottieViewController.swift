@@ -20,6 +20,7 @@ final class LottieViewController: UIViewController {
         animationView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+        animationView.play()
         animationView.loopMode = .loop
         
     }
