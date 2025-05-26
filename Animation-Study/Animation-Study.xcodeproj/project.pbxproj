@@ -17,6 +17,7 @@
 		F6C332162DE4A60000B8A2D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C332112DE4A60000B8A2D5 /* ViewController.swift */; };
 		F6C332172DE4A60000B8A2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C3320B2DE4A60000B8A2D5 /* Assets.xcassets */; };
 		F6C332192DE4A60000B8A2D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C3320E2DE4A60000B8A2D5 /* LaunchScreen.storyboard */; };
+		F6C3321F2DE4ADB400B8A2D5 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3321E2DE4AD9E00B8A2D5 /* LottieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F6C3320F2DE4A60000B8A2D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F6C332102DE4A60000B8A2D5 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		F6C332112DE4A60000B8A2D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6C3321E2DE4AD9E00B8A2D5 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				F6C3321C2DE4A65C00B8A2D5 /* Application */,
 				F6C3321B2DE4A64C00B8A2D5 /* Global */,
 				F6C3321A2DE4A60800B8A2D5 /* Week1 */,
+				F6C3321D2DE4AD0900B8A2D5 /* Week2 */,
 				F6C3320C2DE4A60000B8A2D5 /* Info.plist */,
 				F6C3320E2DE4A60000B8A2D5 /* LaunchScreen.storyboard */,
 			);
@@ -97,6 +100,14 @@
 				F6C3320F2DE4A60000B8A2D5 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		F6C3321D2DE4AD0900B8A2D5 /* Week2 */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3321E2DE4AD9E00B8A2D5 /* LottieViewController.swift */,
+			);
+			path = Week2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C3321F2DE4ADB400B8A2D5 /* LottieViewController.swift in Sources */,
 				F6C332132DE4A60000B8A2D5 /* AppDelegate.swift in Sources */,
 				F6C332142DE4A60000B8A2D5 /* SceneDelegate.swift in Sources */,
 				F6C332152DE4A60000B8A2D5 /* UIView+.swift in Sources */,
