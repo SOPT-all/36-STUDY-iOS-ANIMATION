@@ -25,9 +25,9 @@ final class LottieViewController: UIViewController {
         $0.addTarget(self, action: #selector(totoroAnimationButtonTap), for: .touchUpInside)
     }
     
-    private lazy var stopButton = UIButton().then {
-        $0.setTitle("Stop", for: .normal)
-        $0.addTarget(self, action: #selector(stopButtonTap), for: .touchUpInside)
+    private lazy var playPauseButton = UIButton().then {
+        $0.setTitle("Pause", for: .normal)
+        $0.addTarget(self, action: #selector(playPauseButtonTap), for: .touchUpInside)
     }
     
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ final class LottieViewController: UIViewController {
         self.view.addSubviews(
             runAnimationButton,
             totoroAnimationButton,
-            stopButton
+            playPauseButton
         )
     }
     
@@ -54,7 +54,7 @@ final class LottieViewController: UIViewController {
             $0.trailing.equalToSuperview().inset(30)
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(15)
         }
-        stopButton.snp.makeConstraints {
+        playPauseButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(15)
         }
@@ -73,6 +73,7 @@ final class LottieViewController: UIViewController {
         runAnimationView.play()
         runAnimationView.loopMode = .loop
         runAnimationView.animationSpeed = 0.7
+        runAnimationView.backgroundBehavior = .pauseAndRestore
     }
     
     @objc private func totoroAnimationButtonTap() {
@@ -87,10 +88,20 @@ final class LottieViewController: UIViewController {
         totoroAnimationView.play()
         totoroAnimationView.loopMode = .loop
         totoroAnimationView.animationSpeed = 0.7
+        
     }
     
-    @objc private func stopButtonTap() {
-        currentAnimation?.stop()
+    @objc private func playPauseButtonTap() {
+        //currentAnimation?.pause()
+        guard let animView = currentAnimation else { return }
+        
+        if animView.isAnimationPlaying {
+            animView.pause()
+            playPauseButton.setTitle("Play", for: .normal)
+        } else {
+            animView.play()
+            playPauseButton.setTitle("Pause", for: .normal)
+        }
     }
     
 }
