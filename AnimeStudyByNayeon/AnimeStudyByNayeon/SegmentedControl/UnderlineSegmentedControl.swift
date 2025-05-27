@@ -27,7 +27,6 @@ final class UnderlineSegmentedControl: UISegmentedControl {
     override init(items: [Any]?) {
         super.init(items: items)
         self.removeBackgroundAndDivider()
-        setLayout()
         addTarget()
     }
     
@@ -35,10 +34,15 @@ final class UnderlineSegmentedControl: UISegmentedControl {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setLayout() {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        guard underlineLeadingConstraint == nil else { return }
+        
         addSubview(underlineView)
-        layoutIfNeeded()
+        
         let segmentWidth = bounds.width / CGFloat(numberOfSegments)
+        
         underlineView.snp.makeConstraints {
             $0.bottom.equalToSuperview()
             $0.height.equalTo(2)

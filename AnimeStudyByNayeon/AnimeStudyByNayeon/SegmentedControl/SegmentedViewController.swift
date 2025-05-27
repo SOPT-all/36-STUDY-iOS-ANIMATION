@@ -28,7 +28,7 @@ final class SegmentedViewController: UIViewController {
     private func setLayout() {
         segmentedControl.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).offset(20)
-            $0.leading.trailing.equalToSuperview().inset(89)
+            $0.leading.trailing.equalToSuperview().inset(20)
             $0.height.equalTo(44)
         }
     }
