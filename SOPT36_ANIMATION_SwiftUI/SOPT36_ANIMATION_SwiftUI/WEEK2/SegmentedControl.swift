@@ -23,7 +23,7 @@ struct SegmentedControl: View {
                         if selected == category {
                             Capsule()
                                 .fill(.blue)
-                                .matchedGeometryEffect(id: category, in: namespace).frame(width: 50, height: 3)
+                                .matchedGeometryEffect(id: "categoryUnderLine", in: namespace).frame(width: 50, height: 3)
                                 .offset(y:10)
                         }
                         Text(category)
