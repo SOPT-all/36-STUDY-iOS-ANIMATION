@@ -43,7 +43,7 @@ final class UnderlineSegmentedControl: UISegmentedControl {
             $0.bottom.equalToSuperview()
             $0.height.equalTo(2)
             $0.width.equalTo(segmentWidth)
-            underlineLeadingConstraint = $0.leading.equalTo(segmentWidth * CGFloat(selectedSegmentIndex)).constraint
+            underlineLeadingConstraint = $0.leading.equalToSuperview().offset(segmentWidth * CGFloat(selectedSegmentIndex)).constraint
         }
     }
     
@@ -61,7 +61,7 @@ final class UnderlineSegmentedControl: UISegmentedControl {
     
     @objc private func segmentChanged() {
         let segmentWidth = bounds.width / CGFloat(numberOfSegments)
-        underlineLeadingConstraint?.update(inset: segmentWidth * CGFloat(selectedSegmentIndex))
+        underlineLeadingConstraint?.update(offset: segmentWidth * CGFloat(selectedSegmentIndex))
         UIView.animate(withDuration: 0.2) {
             self.layoutIfNeeded()
         }
