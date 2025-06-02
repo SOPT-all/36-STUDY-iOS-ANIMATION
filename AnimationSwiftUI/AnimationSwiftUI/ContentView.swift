@@ -113,6 +113,9 @@ struct CustomProgressView: View {
     private func animateShake() {
         withAnimation {
             xOffset = 20
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             withAnimation(.interpolatingSpring(stiffness: 500, damping: 10)) {
                 xOffset = 0
             }
