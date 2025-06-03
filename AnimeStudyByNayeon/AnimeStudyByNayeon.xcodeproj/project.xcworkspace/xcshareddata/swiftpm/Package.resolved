@@ -1,6 +1,15 @@
 {
-  "originHash" : "417896853595a0645b951ad99628d76f8c6934c1aaf4bdedaf0e619da09565a9",
+  "originHash" : "a33ea89c561f67a2d7911551cdf4e3946a5b59fe147dc84182c7d365b27b2c3b",
   "pins" : [
+    {
+      "identity" : "skeletonview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Juanpe/SkeletonView",
+      "state" : {
+        "revision" : "2f5274827d310e32c09325dd3e0007120940988e",
+        "version" : "1.31.0"
+      }
+    },
     {
       "identity" : "snapkit",
       "kind" : "remoteSourceControl",

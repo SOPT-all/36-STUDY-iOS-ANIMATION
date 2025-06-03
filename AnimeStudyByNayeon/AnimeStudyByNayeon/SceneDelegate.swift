@@ -22,7 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window.rootViewController = MovingViewController()
 //        window.rootViewController = ToastMessageViewController()
 //        window.rootViewController = ButtonViewController()
-        window.rootViewController = SegmentedViewController()
+//        window.rootViewController = SegmentedViewController()
+        window.rootViewController = ProgressBarViewController()
         window.makeKeyAndVisible()
         self.window = window
     }

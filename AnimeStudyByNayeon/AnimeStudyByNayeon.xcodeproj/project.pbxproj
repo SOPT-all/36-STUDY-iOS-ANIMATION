@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33A082562DC9A3A300E61923 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33A082552DC9A3A300E61923 /* SnapKit */; };
 		33A082592DC9A3AD00E61923 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 33A082582DC9A3AD00E61923 /* Then */; };
+		33D4B3512DEF37FF00CC8A35 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 33D4B3502DEF37FF00CC8A35 /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A082562DC9A3A300E61923 /* SnapKit in Frameworks */,
+				33D4B3512DEF37FF00CC8A35 /* SkeletonView in Frameworks */,
 				33A082592DC9A3AD00E61923 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +89,7 @@
 			packageProductDependencies = (
 				33A082552DC9A3A300E61923 /* SnapKit */,
 				33A082582DC9A3AD00E61923 /* Then */,
+				33D4B3502DEF37FF00CC8A35 /* SkeletonView */,
 			);
 			productName = AnimeStudyByNayeon;
 			productReference = 33A082192DC99E3700E61923 /* AnimeStudyByNayeon.app */;
@@ -119,6 +122,7 @@
 			packageReferences = (
 				33A082542DC9A3A300E61923 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				33A082572DC9A3AD00E61923 /* XCRemoteSwiftPackageReference "Then" */,
+				33D4B34F2DEF37FF00CC8A35 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 33A0821A2DC99E3700E61923 /* Products */;
@@ -362,6 +366,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		33D4B34F2DEF37FF00CC8A35 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.31.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -374,6 +386,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 33A082572DC9A3AD00E61923 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		33D4B3502DEF37FF00CC8A35 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33D4B34F2DEF37FF00CC8A35 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
