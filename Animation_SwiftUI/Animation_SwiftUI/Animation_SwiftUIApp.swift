@@ -11,7 +11,7 @@ import SwiftUI
 struct Animation_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MyProgressView()
         }
     }
 }

@@ -26,13 +26,11 @@ struct MyProgressView: View {
             }
 
             if timerRunning {
-                // 기본 ProgressView() (인디케이터) 표시
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle())
             }
         }
         .onAppear {
-            // 3초마다 progress 증가시키는 타이머
             Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { timer in
                 if progress < 1.0 {
                     progress += 0.05
