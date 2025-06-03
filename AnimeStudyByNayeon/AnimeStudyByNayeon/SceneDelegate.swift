@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
 //        window.rootViewController = MovingViewController()
 //        window.rootViewController = ToastMessageViewController()
-        window.rootViewController = ButtonViewController()
+//        window.rootViewController = ButtonViewController()
+        window.rootViewController = SegmentedViewController()
         window.makeKeyAndVisible()
         self.window = window
     }
